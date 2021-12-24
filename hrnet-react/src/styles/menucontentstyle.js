@@ -23,7 +23,7 @@ const Menucontentstyle = createGlobalStyle`
     text-decoration: none;
     color: black;
     font-size: 20px;
-    padding-bottom: 15%;
+    padding-bottom: 20%;
 }
 `
 

@@ -20,7 +20,7 @@ export default function Employeeslist(){
             <thead>
             <tr>
             {columns.map(({title, data})=>(
-                <th className="column_title" key={data} onClick={()=>ArraySort()}>{title}</th>
+                <th className="column_head" key={data} onClick={()=>ArraySort()}>{title}</th>
             ))}
             </tr>
             </thead>

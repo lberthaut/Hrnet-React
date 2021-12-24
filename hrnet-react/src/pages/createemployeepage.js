@@ -7,7 +7,7 @@ export default function Createemployeepage() {
   return (
     <>
       <Header /><Headerstyle />
-      {/* <Createemployee/><Createemployeestyle/> */}
+      <Createemployee/><Createemployeestyle/>
     </>
   );
 }

@@ -14,6 +14,11 @@ flex-direction: column;
     width: 80%;
 }
 
+.column_head{
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
 th, td{
     border: 1px solid black;
     padding: 10px 20 px;
