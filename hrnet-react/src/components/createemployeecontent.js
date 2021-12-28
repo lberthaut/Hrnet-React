@@ -1,3 +1,5 @@
+import states from "../datas/states"
+
 export default function Createemployee(){
     return(
         <>
@@ -5,36 +7,40 @@ export default function Createemployee(){
             <h2>Create Employee</h2>
             <form action="#" id="create-employee">
                 <label for="first-name">First Name</label>
-                <input type="text" id="first-name" />
+                <input type="text" className="first-name" />
 
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" />
+                <input type="text" className="last-name" />
 
                 <label for="date-of-birth">Date of Birth</label>
-                <input id="date-of-birth" type="text" />
+                <input className="date-of-birth" type="text" />
 
                 <label for="start-date">Start Date</label>
-                <input id="start-date" type="text" />
+                <input className="start-date" type="text" />
 
                 <fieldset className="address">
                     <legend>Address</legend>
 
                     <label for="street">Street</label>
-                    <input id="street" type="text" />
+                    <input className="street" type="text" />
 
                     <label for="city">City</label>
-                    <input id="city" type="text" />
+                    <input className="city" type="text" />
 
                     <label for="state">State</label>
-                    <select name="state" id="state"></select>
+                    <select name="state" className="state">{
+                        states.map(({name, abbreviation})=>(
+                            <option key={abbreviation}>{name}</option>
+                        ))
+                    }</select>
 
                     <label for="zip-code">Zip Code</label>
-                    <input id="zip-code" type="number" />
+                    <input className="zip-code" type="number" />
                 </fieldset>
                 
                 <div className="department_container">
                 <label for="department">Department</label>
-                <select name="department" id="department">
+                <select name="department" className="department">
                     <option>Sales</option>
                     <option>Marketing</option>
                     <option>Engineering</option>
@@ -44,9 +50,9 @@ export default function Createemployee(){
                 </div>
             </form>
 
-            <button onclick="saveEmployee()">Save</button>
+            <button className="submit_button" onclick="saveEmployee()">Save</button>
         </div>
-        <div id="confirmation" className="modal">Employee Created!</div>
+        <div className="confirmation" className="modal">Employee Created!</div>
         </>
     )
 }

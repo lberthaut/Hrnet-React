@@ -24,7 +24,7 @@ input{
     width: 60%;
 }
 
-#start-date{
+.start-date{
     margin-bottom: 10%;
 }
 
@@ -35,16 +35,30 @@ fieldset{
     flex-wrap: wrap;
 }
 
-.department_container{
-    border: 1px solid black;
-    margin-top: 8%;
-    width: 99%;
-    display: flex;
-    flex-direction: column;
+.state{
+    margin-bottom: 3%;
+    height: 25px;
 }
 
-#department{
-    height: 35px;
+.department_container{
+    border: 1px solid grey;
+    margin-top: 8%;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.department{
+    height: 25px;
+    width: 60%;
+}
+
+.submit_button{
+    height: 25px;
+    width: 50%;
+    margin: 5% 50% 0% 25%;
 }
 `
 
