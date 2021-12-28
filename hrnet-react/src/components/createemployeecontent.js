@@ -1,6 +1,12 @@
+import { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css'
+
 import states from "../datas/states"
 
 export default function Createemployee(){
+    const [startDate, setStartDate]= useState(new Date());
+
     return(
         <>
         <div className="createemployee_container">
@@ -13,10 +19,10 @@ export default function Createemployee(){
                 <input type="text" className="last-name" />
 
                 <label for="date-of-birth">Date of Birth</label>
-                <input className="date-of-birth" type="text" />
+                <DatePicker selected={startDate} onChange={(date)=> setStartDate(date)} className="date-of-birth"/>
 
                 <label for="start-date">Start Date</label>
-                <input className="start-date" type="text" />
+                <DatePicker selected={startDate} onChange={(date)=> setStartDate(date)} className="start-date"/>
 
                 <fieldset className="address">
                     <legend>Address</legend>
@@ -52,7 +58,7 @@ export default function Createemployee(){
 
             <button className="submit_button" onclick="saveEmployee()">Save</button>
         </div>
-        <div className="confirmation" className="modal">Employee Created!</div>
+       {/*  <div className="confirmation" className="modal">Employee Created!</div> */}
         </>
     )
 }
