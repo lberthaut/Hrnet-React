@@ -20,11 +20,15 @@ const Employeesliststyle = createGlobalStyle`
     cursor: pointer;
 }
 
-th, td{
+.header_array, .column_head{
     border: 1px solid black;
-    padding: 10px 20 px;
+    padding: 0.5% 1%;
 }
 
+.array_cell{
+    border: 1px solid black;
+    padding: 1%;
+}
 `;
 
 export default Employeesliststyle;
