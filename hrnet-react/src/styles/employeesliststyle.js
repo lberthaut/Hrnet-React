@@ -2,11 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 const Employeesliststyle = createGlobalStyle`
 .employeeslist_container{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding-top: 8%;
 }
 
 .table{
@@ -24,6 +25,6 @@ th, td{
     padding: 10px 20 px;
 }
 
-`
+`;
 
 export default Employeesliststyle;

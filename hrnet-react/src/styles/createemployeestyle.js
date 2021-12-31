@@ -6,7 +6,8 @@ const Createemployeestyle = createGlobalStyle`
     flex-direction: column;
     width: 20%;
     margin: 0 auto;
-    padding-top: 2%;
+    padding-top: 8%;
+    padding-bottom: 2%;
 }
 
 #create-employee{
