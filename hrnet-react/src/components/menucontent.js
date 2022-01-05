@@ -10,7 +10,7 @@ export default function Menucontent (){
                 <img className="img-logo" alt="wealth health logo" src={logo}/>
             </Link>
             <h1 className="title">HRnet</h1>
-            <Link to="/createuser" className="link_menucontent">Create Employee</Link>
+            <Link to="/" className="link_menucontent">Create Employee</Link>
             <Link to="/employeeslist" className="link_menucontent">Employees List</Link>
         </div>
     )

@@ -13,7 +13,7 @@ export default function Header () {
             </Link>
             <h1 className="title-header">HRnet</h1>
             <div className="header-nav">
-                <Link to="/createuser" className="createuser">Create Employee</Link>
+                <Link to="/" className="createuser">Create Employee</Link>
                 <Link to="/employeeslist" className="employeeslist">Employees List</Link>
             </div>
         </div>
