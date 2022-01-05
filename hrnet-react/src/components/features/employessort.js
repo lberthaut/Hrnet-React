@@ -5,7 +5,10 @@ export default function ArraySort() {
             return row.children[ids].textContent;
           }
           const tri = function(v1, v2){
-            if (v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2)){
+           if (!isNaN(Date.parse(v1)) && !isNaN(Date.parse(v2))){
+            return Date.parse(v1) - Date.parse(v2)
+           }
+            else if (v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2)){
               return v1 - v2;
             }
             else {

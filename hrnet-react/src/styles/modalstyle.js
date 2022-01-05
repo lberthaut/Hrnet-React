@@ -9,6 +9,7 @@ const Modalstyle = createGlobalStyle`
     opacity: 0.7;
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 
 
