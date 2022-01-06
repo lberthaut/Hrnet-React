@@ -14,7 +14,7 @@ export default function App() {
   const [city, setCity] = useState([]);
   const [state, setState] = useState([]);
   const [zipCode, setZipCode] = useState([]);
-  const [department, setDepartment] = useState([]);
+  const [valueDepartment, setDepartment] = useState([]);
 
   return (
     <>
@@ -38,12 +38,25 @@ export default function App() {
                 setState={setState}
                 zipCode={zipCode}
                 setZipCode={setZipCode}
-                department={department}
+                valueDepartment={valueDepartment}
                 setDepartment={setDepartment}
               />
             }
           />
-          <Route path="employeeslist" element={<Employeeslist />} />
+          <Route
+            path="employeeslist"
+            element={
+              <Employeeslist
+                firstname={firstname}
+                lastname={lastname}
+                street={street}
+                city={city}
+                state={state}
+                zipCode={zipCode}
+                valueDepartment={valueDepartment}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
       <Createemployeestyle />

@@ -5,6 +5,7 @@ import useModal from "../hooks/usemodal";
 import Modal from "./modal";
 
 import states from "../datas/states";
+import department from "../datas/department";
 import Modalstyle from "../styles/modalstyle";
 
 export default function Createemployee({
@@ -30,6 +31,8 @@ export default function Createemployee({
   const handleSubmit = (evt) => {
     evt.preventDefault();
     toggle();
+    console.log({state})
+    console.log({valueDepartment})
   };
 
   return (
@@ -41,6 +44,7 @@ export default function Createemployee({
           <input
             type="text"
             className="first-name"
+            name="first-name"
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
           />
@@ -49,20 +53,25 @@ export default function Createemployee({
           <input
             type="text"
             className="last-name"
+            name="last-name"
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
           />
 
           <label htmlFor="date-of-birth">Date of Birth</label>
           <DatePicker
+          name="date-of-birth"
             selected={birthday}
+            value={birthday}
             onChange={(birthdayDate) => setBirthday(birthdayDate)}
             className="date-of-birth"
           />
 
           <label htmlFor="start-date">Start Date</label>
           <DatePicker
+          name="start-date"
             selected={startDate}
+            value={startDate}
             onChange={(date) => setStartDate(date)}
             className="start-date"
           />
@@ -73,6 +82,7 @@ export default function Createemployee({
             <label htmlFor="street">Street</label>
             <input
               className="street"
+              name="street"
               type="text"
               value={street}
               onChange={(e) => setStreet(e.target.value)}
@@ -81,6 +91,7 @@ export default function Createemployee({
             <label htmlFor="city">City</label>
             <input
               className="city"
+              name="city"
               type="text"
               value={city}
               onChange={(e) => setCity(e.target.value)}
@@ -90,7 +101,7 @@ export default function Createemployee({
             <select
               name="state"
               className="state"
-              value={state}
+              selected={state}
               onChange={(e) => setState(e.target.value)}
             >
             <option key="null"></option>
@@ -102,6 +113,7 @@ export default function Createemployee({
             <label htmlFor="zip-code">Zip Code</label>
             <input
               className="zip-code"
+              name="zip-code"
               type="number"
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}
@@ -113,15 +125,13 @@ export default function Createemployee({
             <select
               name="department"
               className="department"
-              value={valueDepartment}
+              selected={valueDepartment}
               onChange={(e) => setDepartment(e.target.value)}
             >
             <option key="null2"></option>
-              <option valuedepartment="Sales">Sales</option>
-              <option valuedepartment="Marketing">Marketing</option>
-              <option valuedepartment="Engineering">Engineering</option>
-              <option valuedepartment="Human Resources">Human Resources</option>
-              <option valuedepartment="Legal">Legal</option>
+            {department.map(({name}) => (
+                <option key={name} value={name}>{name}</option>
+              ))}
             </select>
           </div>
           <button className="submit_button" type="submit" value="Submit">
