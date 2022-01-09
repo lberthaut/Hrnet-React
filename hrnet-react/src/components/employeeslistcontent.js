@@ -1,6 +1,7 @@
 import ArraySort from "./features/employessort";
 import employees from "../datas/mockedemployees";
 import { useEffect } from "react";
+import columns from "../datas/columns";
 
 export default function Employeeslist({
   firstname,
@@ -11,18 +12,6 @@ export default function Employeeslist({
   zipCode,
   valueDepartment,
 }) {
-  const columns = [
-    { title: "First Name", data: "firstName" },
-    { title: "Last Name", data: "lastName" },
-    { title: "Start Date", data: "startDate" },
-    { title: "Department", data: "department" },
-    { title: "Date of Birth", data: "dateOfBirth" },
-    { title: "Street", data: "street" },
-    { title: "City", data: "city" },
-    { title: "State", data: "state" },
-    { title: "Zip Code", data: "zipCode" },
-  ];
-
   useEffect(() => {
     ArraySort();
   }, []);

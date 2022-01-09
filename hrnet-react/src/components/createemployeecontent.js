@@ -31,8 +31,6 @@ export default function Createemployee({
   const handleSubmit = (evt) => {
     evt.preventDefault();
     toggle();
-    console.log({state})
-    console.log({valueDepartment})
   };
 
   return (
@@ -130,7 +128,7 @@ export default function Createemployee({
             >
             <option key="null2"></option>
             {department.map(({name}) => (
-                <option key={name} value={name}>{name}</option>
+                <option key={name}>{name}</option>
               ))}
             </select>
           </div>
