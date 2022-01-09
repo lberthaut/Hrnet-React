@@ -1,4 +1,3 @@
-import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import useModal from "../hooks/usemodal";
@@ -22,10 +21,13 @@ export default function Createemployee({
   zipCode,
   setZipCode,
   valueDepartment,
-  setDepartment
+  setDepartment,
+  startDate,
+  setStartDate,
+  birthday,
+  setBirthday
 }) {
-  const [startDate, setStartDate] = useState(new Date());
-  const [birthday, setBirthday] = useState(new Date());
+
   const { isShowing, toggle } = useModal();
 
   const handleSubmit = (evt) => {

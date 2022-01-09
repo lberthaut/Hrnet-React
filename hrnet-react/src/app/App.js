@@ -15,6 +15,8 @@ export default function App() {
   const [state, setState] = useState([]);
   const [zipCode, setZipCode] = useState([]);
   const [valueDepartment, setDepartment] = useState([]);
+  const [startDate, setStartDate] = useState(new Date());
+  const [birthday, setBirthday] = useState(new Date());
 
   return (
     <>
@@ -40,6 +42,10 @@ export default function App() {
                 setZipCode={setZipCode}
                 valueDepartment={valueDepartment}
                 setDepartment={setDepartment}
+                startDate={startDate}
+                setStartDate={setStartDate}
+                birthday={birthday}
+                setBirthday={setBirthday}
               />
             }
           />
@@ -54,6 +60,8 @@ export default function App() {
                 state={state}
                 zipCode={zipCode}
                 valueDepartment={valueDepartment}
+                startDate={startDate}
+                birthday={birthday}
               />
             }
           />
