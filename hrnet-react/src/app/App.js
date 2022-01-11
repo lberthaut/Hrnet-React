@@ -18,6 +18,8 @@ export default function App() {
   const [startDate, setStartDate] = useState(new Date());
   const [birthday, setBirthday] = useState(new Date());
 
+  
+
   return (
     <>
       <BrowserRouter>
@@ -60,8 +62,8 @@ export default function App() {
                 state={state}
                 zipCode={zipCode}
                 valueDepartment={valueDepartment}
-                startDate={startDate}
-                birthday={birthday}
+                startDate={startDate.toDateString().split(' ').slice(1).join(' ')}
+                birthday={birthday.toDateString().split(' ').slice(1).join(' ')}
               />
             }
           />

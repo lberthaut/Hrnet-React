@@ -12,14 +12,11 @@ const Headerstyle = createGlobalStyle`
     width: 100%;
     background-color: white;
     z-index: 0;
-}
-
-.img-logo{
-    width: 35%;
+    padding-left: 3%;
 }
 
 .header-nav{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +35,7 @@ a{
 }
 
 .employeeslist{
-    padding-right: 10%;
+    padding-right: 30%;
 }
 `
 export default Headerstyle;

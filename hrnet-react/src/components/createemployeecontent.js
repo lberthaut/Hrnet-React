@@ -62,8 +62,7 @@ export default function Createemployee({
           <DatePicker
           name="date-of-birth"
             selected={birthday}
-            value={birthday}
-            onChange={(birthdayDate) => setBirthday(birthdayDate)}
+            onChange={(birthday) => setBirthday(birthday)}
             className="date-of-birth"
           />
 
@@ -71,7 +70,6 @@ export default function Createemployee({
           <DatePicker
           name="start-date"
             selected={startDate}
-            value={startDate}
             onChange={(date) => setStartDate(date)}
             className="start-date"
           />
