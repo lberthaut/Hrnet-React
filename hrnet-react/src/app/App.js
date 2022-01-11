@@ -6,6 +6,7 @@ import Employeeslist from "../components/employeeslistcontent";
 import Employeesliststyle from "../styles/employeesliststyle";
 import Createemployee from "../components/createemployeecontent";
 import Createemployeestyle from "../styles/createemployeestyle";
+import useModal from "../hooks/usemodal";
 
 export default function App() {
   const [firstname, setFirstname] = useState([]);
@@ -15,10 +16,15 @@ export default function App() {
   const [state, setState] = useState([]);
   const [zipCode, setZipCode] = useState([]);
   const [valueDepartment, setDepartment] = useState([]);
-  const [startDate, setStartDate] = useState(new Date());
-  const [birthday, setBirthday] = useState(new Date());
+  const [startDate, setStartDate] = useState(null);
+  const [birthday, setBirthday] = useState(null);
 
-  
+  const { isShowing, toggle } = useModal();
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    toggle();
+  };
 
   return (
     <>
@@ -48,6 +54,9 @@ export default function App() {
                 setStartDate={setStartDate}
                 birthday={birthday}
                 setBirthday={setBirthday}
+                handleSubmit={handleSubmit}
+                isShowing={isShowing}
+                toggle={toggle}
               />
             }
           />
@@ -62,8 +71,8 @@ export default function App() {
                 state={state}
                 zipCode={zipCode}
                 valueDepartment={valueDepartment}
-                startDate={startDate.toDateString().split(' ').slice(1).join(' ')}
-                birthday={birthday.toDateString().split(' ').slice(1).join(' ')}
+                startDate={startDate}
+                birthday={birthday}
               />
             }
           />

@@ -1,8 +1,6 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import useModal from "../hooks/usemodal";
 import Modal from "./modal";
-
 import states from "../datas/states";
 import department from "../datas/department";
 import Modalstyle from "../styles/modalstyle";
@@ -25,16 +23,11 @@ export default function Createemployee({
   startDate,
   setStartDate,
   birthday,
-  setBirthday
+  setBirthday,
+  handleSubmit,
+  isShowing,
+  toggle,
 }) {
-
-  const { isShowing, toggle } = useModal();
-
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    toggle();
-  };
-
   return (
     <>
       <div className="createemployee_container">
@@ -60,18 +53,20 @@ export default function Createemployee({
 
           <label htmlFor="date-of-birth">Date of Birth</label>
           <DatePicker
-          name="date-of-birth"
+            name="date-of-birth"
             selected={birthday}
-            onChange={(birthday) => setBirthday(birthday)}
+            onChange={setBirthday}
             className="date-of-birth"
+            placeholderText=""
           />
 
           <label htmlFor="start-date">Start Date</label>
           <DatePicker
-          name="start-date"
+            name="start-date"
             selected={startDate}
-            onChange={(date) => setStartDate(date)}
+            onChange={setStartDate}
             className="start-date"
+            placeholderText=""
           />
 
           <fieldset className="address">
@@ -102,9 +97,11 @@ export default function Createemployee({
               selected={state}
               onChange={(e) => setState(e.target.value)}
             >
-            <option key="null"></option>
+              <option key="null"></option>
               {states.map(({ name, abbreviation }) => (
-                <option key={abbreviation} value={abbreviation}>{name}</option>
+                <option key={abbreviation} value={abbreviation}>
+                  {name}
+                </option>
               ))}
             </select>
 
@@ -126,8 +123,8 @@ export default function Createemployee({
               selected={valueDepartment}
               onChange={(e) => setDepartment(e.target.value)}
             >
-            <option key="null2"></option>
-            {department.map(({name}) => (
+              <option key="null2"></option>
+              {department.map(({ name }) => (
                 <option key={name}>{name}</option>
               ))}
             </select>
