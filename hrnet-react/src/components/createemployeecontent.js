@@ -58,6 +58,7 @@ export default function Createemployee({
             onChange={setBirthday}
             className="date-of-birth"
             placeholderText=""
+            required
           />
 
           <label htmlFor="start-date">Start Date</label>
@@ -67,6 +68,7 @@ export default function Createemployee({
             onChange={setStartDate}
             className="start-date"
             placeholderText=""
+            required
           />
 
           <fieldset className="address">
