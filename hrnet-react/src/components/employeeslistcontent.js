@@ -12,7 +12,7 @@ export default function Employeeslist({
   zipCode,
   valueDepartment,
   startDate,
-  birthday
+  birthday,
 }) {
   useEffect(() => {
     ArraySort();
@@ -61,9 +61,9 @@ export default function Employeeslist({
           <tr key={lastname}>
             <th className="array_cell">{firstname}</th>
             <th className="array_cell">{lastname}</th>
-            <th className="array_cell">{startDate.toDateString().split(" ").slice(1).join(" ")}</th>
+            <th className="array_cell">{startDate}</th>
             <th className="array_cell">{valueDepartment}</th>
-            <th className="array_cell">{birthday.toDateString().split(" ").slice(1).join(" ")}</th>
+            <th className="array_cell">{birthday}</th>
             <th className="array_cell">{street}</th>
             <th className="array_cell">{city}</th>
             <th className="array_cell">{state}</th>
