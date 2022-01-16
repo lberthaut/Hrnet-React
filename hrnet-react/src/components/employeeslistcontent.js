@@ -13,6 +13,8 @@ export default function Employeeslist({
   valueDepartment,
   startDate,
   birthday,
+  switched,
+  notHide
 }) {
   useEffect(() => {
     ArraySort();
@@ -60,17 +62,21 @@ export default function Employeeslist({
             )
           )}
           {/* props datas */}
-          <tr key={lastname}>
-            <th className="array_cell">{firstname}</th>
-            <th className="array_cell">{lastname}</th>
-            <th className="array_cell">{startDate}</th>
-            <th className="array_cell">{valueDepartment}</th>
-            <th className="array_cell">{birthday}</th>
-            <th className="array_cell">{street}</th>
-            <th className="array_cell">{city}</th>
-            <th className="array_cell">{state}</th>
-            <th className="array_cell">{zipCode}</th>
-          </tr>
+          {
+            notHide !== false ? (
+              <tr key={lastname}>
+                <th className="array_cell">{firstname}</th>
+                <th className="array_cell">{lastname}</th>
+                <th className="array_cell">{startDate}</th>
+                <th className="array_cell">{valueDepartment}</th>
+                <th className="array_cell">{birthday}</th>
+                <th className="array_cell">{street}</th>
+                <th className="array_cell">{city}</th>
+                <th className="array_cell">{state}</th>
+                <th className="array_cell">{zipCode}</th>
+              </tr>
+            ) : (null)
+          }
         </tbody>
       </table>
     </div>

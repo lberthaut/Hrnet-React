@@ -4,7 +4,7 @@ import Modal from "./modal";
 import states from "../datas/states";
 import department from "../datas/department";
 import Modalstyle from "../styles/modalstyle";
-import useModal from "../hooks/usemodal";
+
 
 export default function Createemployee({
   firstname,
@@ -25,13 +25,12 @@ export default function Createemployee({
   setStartDate,
   birthday,
   setBirthday,
+  toggle,
+  isShowing,
+  handleSubmit
 }) {
-  const { isShowing, toggle } = useModal();
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    toggle();
-  };
+
   return (
     <>
       <div className="createemployee_container">

@@ -6,6 +6,8 @@ import Employeeslist from "../components/employeeslistcontent";
 import Employeesliststyle from "../styles/employeesliststyle";
 import Createemployee from "../components/createemployeecontent";
 import Createemployeestyle from "../styles/createemployeestyle";
+import useModal from "../hooks/usemodal";
+import useArray from "../hooks/useArray";
 
 export default function App() {
   const [firstname, setFirstname] = useState("");
@@ -17,6 +19,16 @@ export default function App() {
   const [valueDepartment, setDepartment] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   const [birthday, setBirthday] = useState(new Date());
+
+  const { isShowing, toggle } = useModal();
+
+  const { notHide, switched } = useArray();
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    toggle();
+    switched();
+  };
 
   return (
     <>
@@ -46,6 +58,9 @@ export default function App() {
                 setStartDate={setStartDate}
                 birthday={birthday}
                 setBirthday={setBirthday}
+                toggle={toggle}
+                handleSubmit={handleSubmit}
+                isShowing={isShowing}
               />
             }
           />
@@ -66,6 +81,8 @@ export default function App() {
                   .slice(1)
                   .join(" ")}
                 birthday={birthday.toDateString().split(" ").slice(1).join(" ")}
+                notHide={notHide}
+                switched={switched}
               />
             }
           />
