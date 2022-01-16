@@ -32,7 +32,6 @@ export default function Createemployee({
     evt.preventDefault();
     toggle();
   };
-
   return (
     <>
       <div className="createemployee_container">

@@ -31,6 +31,7 @@ export default function Employeeslist({
             ))}
           </tr>
         </thead>
+        {/* mocked datas */}
         <tbody>
           {employees.map(
             ({
@@ -58,6 +59,7 @@ export default function Employeeslist({
               </tr>
             )
           )}
+          {/* props datas */}
           <tr key={lastname}>
             <th className="array_cell">{firstname}</th>
             <th className="array_cell">{lastname}</th>

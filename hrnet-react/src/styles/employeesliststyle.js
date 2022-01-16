@@ -8,6 +8,7 @@ const Employeesliststyle = createGlobalStyle`
     align-items: center;
     margin: 0 auto;
     padding-top: 8%;
+    font-size: 1.2vw;
 }
 
 .table{

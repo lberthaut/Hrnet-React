@@ -8,13 +8,13 @@ import Createemployee from "../components/createemployeecontent";
 import Createemployeestyle from "../styles/createemployeestyle";
 
 export default function App() {
-  const [firstname, setFirstname] = useState([]);
-  const [lastname, setLastname] = useState([]);
-  const [street, setStreet] = useState([]);
-  const [city, setCity] = useState([]);
-  const [state, setState] = useState([]);
-  const [zipCode, setZipCode] = useState([]);
-  const [valueDepartment, setDepartment] = useState([]);
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [street, setStreet] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [valueDepartment, setDepartment] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   const [birthday, setBirthday] = useState(new Date());
 
