@@ -8,12 +8,12 @@ const Employeesliststyle = createGlobalStyle`
     align-items: center;
     margin: 0 auto;
     padding-top: 8%;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .table{
     border-collapse: collapse;
-    width: 80%;
+    width: 60%;
 }
 
 .column_head{
@@ -22,12 +22,12 @@ const Employeesliststyle = createGlobalStyle`
 }
 
 .header_array, .column_head{
-    border: 1px solid black;
+    border: 0.5px solid black;
     padding: 0.5% 1%;
 }
 
 .array_cell{
-    border: 1px solid black;
+    border: 0.5px solid black;
     padding: 1%;
 }
 `;

@@ -82,7 +82,6 @@ export default function App() {
                   .join(" ")}
                 birthday={birthday.toDateString().split(" ").slice(1).join(" ")}
                 notHide={notHide}
-                switched={switched}
               />
             }
           />

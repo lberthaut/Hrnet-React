@@ -7,7 +7,7 @@ const Headerstyle = createGlobalStyle`
     justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 7px 4px -6px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     position: fixed;
     width: 100%;
     background-color: white;

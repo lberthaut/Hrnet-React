@@ -13,7 +13,6 @@ export default function Employeeslist({
   valueDepartment,
   startDate,
   birthday,
-  switched,
   notHide
 }) {
   useEffect(() => {
