@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Projet HrNet for WealthHealth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## OpenClassrooms training project 14/14
 
-## Available Scripts
+**Goal**
 
-In the project directory, you can run:
+Create an intern web application on React
 
-### `npm start`
+**Needs**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Convert a web JQuery site, to React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Skills
 
-### `npm test`
+- Convert page from JQuery to React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create a new state manager
 
-### `npm run build`
+- Display React Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Perform performance tests with Google LightHouse
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Create a new React Component (Modal)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Resources provided
 
-### `npm run eject`
+- [Repo JQuery Site](https://github.com/OpenClassrooms-Student-Center/P12_Front-end)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Library
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+REACT
+REACT-ROUTER-DOM
+STYLED-COMPONENTS
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Recommanded IDE**
 
-## Learn More
+- Visual Studio Code
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Prerequisites**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/)
+- [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
+- [Styled-components](https://styled-components.com/)
 
-### Code Splitting
+## Installing et starting Front-end
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Clone the repository: `https://github.com/lberthaut/lberthaut_12_26102021.git`
 
-### Analyzing the Bundle Size
+- With a terminal, move to this folder: `cd hrnet-react`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- And install dependancies: `npm install`
 
-### Making a Progressive Web App
+- Start the project on port 3001: `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Composents
 
-### Advanced Configuration
+### Header
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+An header that displays the Create Employee form and the employee's array
 
-### Deployment
+```
+hrnet-modal/components/header.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Create Employee Form
 
-### `npm run build` fails to minify
+A form that allows to register a new employee on the state and the array employee
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+hrnet-modal/components/createmployeecontent.js
+```
+
+### Employee List
+
+An array that pin employees list and display new employee created
+
+```
+hrnet-modal/components/employeelistcontent.js
+```
+
+### Modal
+
+A modal created in React, that appear on the form submit
+
+```
+hrnet-modal/components/modal.js
+```
