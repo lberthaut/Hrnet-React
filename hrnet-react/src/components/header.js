@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router';
 /*Header component, displaying new array form, and employee array*/
 export default function Header() {
 
-
+    /*Go to the Create employee form, with states and input cleared*/
     function refreshPage() {
         const navigate = useNavigate
         navigate("/")
