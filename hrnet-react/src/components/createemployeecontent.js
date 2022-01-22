@@ -43,6 +43,7 @@ export default function Createemployee({
             name="first-name"
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
+            required
           />
 
           <label htmlFor="last-name">Last Name</label>
@@ -52,6 +53,7 @@ export default function Createemployee({
             name="last-name"
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
+            required
           />
 
           <label htmlFor="date-of-birth">Date of Birth</label>
