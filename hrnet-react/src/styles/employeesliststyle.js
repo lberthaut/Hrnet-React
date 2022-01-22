@@ -14,7 +14,8 @@ const Employeesliststyle = createGlobalStyle`
 
 .table{
     border-collapse: collapse;
-    width: 60%;
+    width: 80%;
+    table-layout: fixed;
 }
 
 .column_head{
