@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 /*Header component, displaying new array form, and employee array*/
 export default function Header() {
+
     return (
         <div className="header">
             <h1 className="title-header">HRnet</h1>

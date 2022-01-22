@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 /*Modal react component that appear when new employee form is submitted*/
-const Modal = ({ isShowing, hide }) =>
+const Modal = ({ isShowing, hide, firstname, lastname }) =>
   isShowing
     ? ReactDOM.createPortal(
       <>
@@ -12,7 +12,7 @@ const Modal = ({ isShowing, hide }) =>
           <div className="'content_modal_container">
             <h2 className="modal_title">Modal HRnet</h2>
             <p className="text">
-              Employee created !
+              Employee {firstname}&nbsp;{lastname} created !
             </p>
           </div>
         </div>

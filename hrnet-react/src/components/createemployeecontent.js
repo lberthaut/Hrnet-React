@@ -142,7 +142,7 @@ export default function Createemployee({
         </form>
       </div>
       {/*Modal component, which is displaying when the form is submitted*/}
-      <Modal isShowing={isShowing} hide={toggle} />
+      <Modal isShowing={isShowing} hide={toggle} firstname={firstname} lastname={lastname} />
       <Modalstyle />
     </>
   );
