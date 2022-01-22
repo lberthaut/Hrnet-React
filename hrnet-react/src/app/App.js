@@ -9,6 +9,7 @@ import Createemployeestyle from "../styles/createemployeestyle";
 import useModal from "../hooks/usemodal";
 import useArray from "../hooks/useArray";
 
+/* App componant, which recover states, initialized on Createmployee component*/
 export default function App() {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
@@ -20,10 +21,13 @@ export default function App() {
   const [startDate, setStartDate] = useState(new Date());
   const [birthday, setBirthday] = useState(new Date());
 
+  /*Toggle function for the modal*/
   const { isShowing, toggle } = useModal();
 
+  /*Toggle function for the new employee line on the array*/
   const { notHide, switched } = useArray();
 
+  /*Submit function for the form of Createemployee component*/
   const handleSubmit = (evt) => {
     evt.preventDefault();
     toggle();
@@ -92,5 +96,3 @@ export default function App() {
     </>
   );
 }
-
-/* .toDateString().split(" ").slice(1).join(" ") */

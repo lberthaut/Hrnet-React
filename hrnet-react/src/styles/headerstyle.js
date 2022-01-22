@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+/*Styled-component CSS of the header*/
 const Headerstyle = createGlobalStyle`
 .header{
     display: flex;

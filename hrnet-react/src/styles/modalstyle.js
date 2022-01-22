@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+/*Styled-component CSS of the modal*/
 const Modalstyle = createGlobalStyle`
 .overlay{
     z-index: 1;

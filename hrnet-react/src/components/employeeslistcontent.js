@@ -3,6 +3,8 @@ import employees from "../datas/mockedemployees";
 import { useEffect } from "react";
 import columns from "../datas/columns";
 
+
+/*Array component of the employee, mocked datas and states datas are released here*/
 export default function Employeeslist({
   firstname,
   lastname,
@@ -15,6 +17,7 @@ export default function Employeeslist({
   birthday,
   notHide
 }) {
+  /*Sort function alphabeticalelly, and by date*/
   useEffect(() => {
     ArraySort();
   }, []);
@@ -60,7 +63,7 @@ export default function Employeeslist({
               </tr>
             )
           )}
-          {/* props datas */}
+          {/* props datas, hidden without states */}
           {
             notHide !== false ? (
               <tr key={lastname}>

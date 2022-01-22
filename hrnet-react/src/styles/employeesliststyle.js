@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+/*Styled-component CSS of the employee array*/
 const Employeesliststyle = createGlobalStyle`
 .employeeslist_container{
     display: flex;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+/*Toggle function of the modal*/
 const useModal = () => {
   const [isShowing, setIsShowing] = useState(false);
 

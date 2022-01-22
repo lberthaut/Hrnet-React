@@ -12,13 +12,13 @@ Convert a web JQuery site, to React
 
 ## Skills
 
-- Convert page from JQuery to React
+- Convert page from JQuery to React (JQuery code can be found on the "site jquery" folder)
 
 - Create a new state manager
 
 - Display React Components
 
--Perform performance tests with Google LightHouse
+-Perform performance tests with Google LightHouse (report on the "comparatif lightouse" folder)
 
 -Create a new React Component (Modal)
 
@@ -74,9 +74,17 @@ A form that allows to register a new employee on the state and the array employe
 hrnet-react/components/createmployeecontent.js
 ```
 
+### Datepicker
+
+A DatePicker react Component in the new employee form which allow to select dates
+
+```
+hrnet-react/components/createmployeecontent.js
+```
+
 ### Employee List
 
-An array that pin employees list and display new employee created
+An array that pin employees list and display new employee created. Sort is possible
 
 ```
 hrnet-react/components/employeelistcontent.js

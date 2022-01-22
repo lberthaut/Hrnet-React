@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
+/*Styled-component CSS of the new employee form*/
 const Createemployeestyle = createGlobalStyle`
 .createemployee_container{
     display: flex;

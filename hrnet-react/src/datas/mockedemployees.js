@@ -1,3 +1,4 @@
+/*Mocked datas for the employee array*/
 const employees = [
   {
     id: "748",

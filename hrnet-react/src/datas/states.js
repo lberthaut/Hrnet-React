@@ -1,3 +1,4 @@
+/*datas for the states dropdown of the new employee form*/
 const states = [
     {
         "name": "Alabama",

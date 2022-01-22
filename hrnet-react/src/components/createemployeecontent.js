@@ -5,7 +5,7 @@ import states from "../datas/states";
 import department from "../datas/department";
 import Modalstyle from "../styles/modalstyle";
 
-
+/*Form component which states get initialized*/
 export default function Createemployee({
   firstname,
   setFirstname,
@@ -35,6 +35,7 @@ export default function Createemployee({
     <>
       <div className="createemployee_container">
         <h2>Create Employee</h2>
+
         <form action="#" id="create-employee" onSubmit={handleSubmit}>
           <label htmlFor="first-name">First Name</label>
           <input
@@ -134,11 +135,13 @@ export default function Createemployee({
               ))}
             </select>
           </div>
+
           <button className="submit_button" type="submit" value="Submit">
             Save
           </button>
         </form>
       </div>
+      {/*Modal component, which is displaying when the form is submitted*/}
       <Modal isShowing={isShowing} hide={toggle} />
       <Modalstyle />
     </>
