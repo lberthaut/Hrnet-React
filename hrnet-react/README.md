@@ -97,3 +97,7 @@ A modal created in React, that appear on the form submit
 ```
 hrnet-react/components/modal.js
 ```
+
+Modal published on NPM : `https://www.npmjs.com/package/modal-lberthaut-oc`
+
+install modal : `npm i modal-lberthaut-oc`
