@@ -1,4 +1,4 @@
-# # Projet HrNet for WealthHealth
+# Projet HrNet for WealthHealth
 
 ## OpenClassrooms training project 14/14
 
@@ -63,7 +63,7 @@ STYLED-COMPONENTS
 An header that displays the Create Employee form and the employee's array
 
 ```
-hrnet-modal/components/header.js
+hrnet-react/components/header.js
 ```
 
 ### Create Employee Form
@@ -71,7 +71,7 @@ hrnet-modal/components/header.js
 A form that allows to register a new employee on the state and the array employee
 
 ```
-hrnet-modal/components/createmployeecontent.js
+hrnet-react/components/createmployeecontent.js
 ```
 
 ### Employee List
@@ -79,7 +79,7 @@ hrnet-modal/components/createmployeecontent.js
 An array that pin employees list and display new employee created
 
 ```
-hrnet-modal/components/employeelistcontent.js
+hrnet-react/components/employeelistcontent.js
 ```
 
 ### Modal
@@ -87,5 +87,5 @@ hrnet-modal/components/employeelistcontent.js
 A modal created in React, that appear on the form submit
 
 ```
-hrnet-modal/components/modal.js
+hrnet-react/components/modal.js
 ```
