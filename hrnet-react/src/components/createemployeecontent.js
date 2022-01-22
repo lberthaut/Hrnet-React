@@ -30,7 +30,6 @@ export default function Createemployee({
   handleSubmit
 }) {
 
-
   return (
     <>
       <div className="createemployee_container">

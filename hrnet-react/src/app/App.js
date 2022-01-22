@@ -37,7 +37,11 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header
+          firstname={firstname}
+          setFirstname={setFirstname}
+          lastname={lastname}
+          setLastname={setLastname} />
         <Headerstyle />
         <Routes>
           <Route
