@@ -13,9 +13,9 @@ export default function Header() {
 
     return (
         <div className="header">
-            <h1 className="title-header">HRnet</h1>
+            <Link to={"/"} onClick={refreshPage}><h1 className="title-header">HRnet</h1></Link>
             <div className="header-nav">
-                <Link to="/" className="createuser" onClick={refreshPage}>Create Employee</Link>
+                <Link to="/" className="createuser">Create Employee</Link>
                 <Link to="/employeeslist" className="employeeslist">Employees List</Link>
             </div>
         </div>
