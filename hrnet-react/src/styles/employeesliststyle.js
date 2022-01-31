@@ -10,27 +10,18 @@ const Employeesliststyle = createGlobalStyle`
     margin: 0 auto;
     padding-top: 8%;
     font-size: 1vw;
+    width: 80%;
+    z-index: -10;
 }
 
 .table{
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
     table-layout: fixed;
 }
 
-.column_head{
-    background-color: #d6d6d6;
-    cursor: pointer;
-}
-
-.header_array, .column_head{
-    border: 0.5px solid black;
-    padding: 0.5% 1%;
-}
-
-.array_cell{
-    border: 0.5px solid black;
-    padding: 1%;
+.headercell{
+    font-weight: bold;
 }
 `;
 

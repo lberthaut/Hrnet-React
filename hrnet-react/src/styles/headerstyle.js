@@ -12,7 +12,7 @@ const Headerstyle = createGlobalStyle`
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 0;
+    z-index: 10;
     padding-left: 3%;
 }
 
