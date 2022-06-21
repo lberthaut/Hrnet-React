@@ -48,7 +48,7 @@ export default function Employeeslist({
 
 
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [rowsPerPage, setRowsPerPage] = React.useState(15);
 
   const handleChangePage = (newPage) => {
     setPage(newPage);
