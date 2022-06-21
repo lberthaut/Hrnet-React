@@ -14,10 +14,17 @@ const Employeesliststyle = createGlobalStyle`
     z-index: -10;
 }
 
-.table{
-    border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
+th{
+    cursor: pointer;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+
+    grid-template-columns: 50% 50%;
+}
+
+.MuiTableCell-root{
+    text-align: center;
+    padding: 12px;
 }
 
 .headercell{
