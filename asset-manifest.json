@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hrnetreact/static/css/main.605fa8a5.css",
+    "main.js": "/hrnetreact/static/js/main.101a9daa.js",
+    "static/js/787.5575411b.chunk.js": "/hrnetreact/static/js/787.5575411b.chunk.js",
+    "index.html": "/hrnetreact/index.html",
+    "main.605fa8a5.css.map": "/hrnetreact/static/css/main.605fa8a5.css.map",
+    "main.101a9daa.js.map": "/hrnetreact/static/js/main.101a9daa.js.map",
+    "787.5575411b.chunk.js.map": "/hrnetreact/static/js/787.5575411b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.605fa8a5.css",
+    "static/js/main.101a9daa.js"
+  ]
+}
