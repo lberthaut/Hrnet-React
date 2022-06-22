@@ -45,7 +45,7 @@ export default function App() {
         <Headerstyle />
         <Routes>
           <Route
-            path="/"
+            path="/hrnet-react"
             element={
               <Createemployee
                 firstname={firstname}
@@ -73,7 +73,7 @@ export default function App() {
             }
           />
           <Route
-            path="employeeslist"
+            path="/hrnet-react/employeeslist"
             element={
               <Employeeslist
                 firstname={firstname}

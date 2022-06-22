@@ -8,15 +8,15 @@ export default function Header() {
     /*Go to the Create employee form, with states and input cleared*/
     function refreshPage() {
         const navigate = useNavigate
-        navigate("/")
+        navigate("/hrnet-react")
     }
 
     return (
         <div className="header">
             <Link to={"/"} onClick={refreshPage}><h1 className="title-header">HRnet</h1></Link>
             <div className="header-nav">
-                <Link to="/" className="createuser">Create Employee</Link>
-                <Link to="/employeeslist" className="employeeslist">Employees List</Link>
+                <Link to="/hrnet-react" className="createuser">Create Employee</Link>
+                <Link to="/hrnet-react/employeeslist" className="employeeslist">Employees List</Link>
             </div>
         </div>
     )
