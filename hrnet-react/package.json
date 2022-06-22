@@ -1,7 +1,7 @@
 {
   "name": "hrnet-react",
   "version": "0.1.0",
-  "homepage": "https://lberthaut.github.io/hrnet-react/",
+  "homepage": "https://lberthaut.github.io/hrnetreact/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
